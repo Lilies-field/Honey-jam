@@ -20,7 +20,10 @@
   },
   "homepage": "https://github.com/Muzihuzi/Honey-jam#readme",
   "dependencies": {
+    "@lavacord/discord.js": "0.0.7",
     "discord.js": "^12.5.1",
+    "ffmpeg": "0.0.4",
+    "ffmpeg-static": "^4.2.7",
     "fs": "0.0.1-security",
     "mariadb": "^2.5.2",
     "node-fetch": "^2.6.1",

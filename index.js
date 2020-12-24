@@ -14,6 +14,7 @@ const command_option = ['developer','wip']
 client.commands = new Discord.Collection()
 client.aliases =  new Discord.Collection()
 
+require('./music/index')
 // 명령어파일 불러오기
 command_option.forEach(element => 
     fs.readdir(`./commands/${element}`, (err,files) => {
