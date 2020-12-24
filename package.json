@@ -1,0 +1,29 @@
+{
+  "name": "honey-jam",
+  "version": "1.0.0",
+  "description": "helps your sleep",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muzihuzi/Honey-jam.git"
+  },
+  "keywords": [
+    "sleep"
+  ],
+  "author": "muzihuzi",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Muzihuzi/Honey-jam/issues"
+  },
+  "homepage": "https://github.com/Muzihuzi/Honey-jam#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "fs": "0.0.1-security",
+    "mariadb": "^2.5.2",
+    "node-fetch": "^2.6.1",
+    "opusscript": "0.0.7"
+  }
+}
