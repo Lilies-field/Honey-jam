@@ -62,11 +62,23 @@ function nap_guide(user){
     return embed
 }
 
+function custom_first(user){
+    const embed = new Discord.MessageEmbed()
+    .setColor(color.sucess)
+    .setTitle('커스텀 숙면가이드 생성기 (유도부분)')
+    .setDescription(`1️⃣ 겨울 눈길산책 여행 (3시간) \n2️⃣ 사자자리/처녀자리/천칭자리 별자리여행 (3시간)\n3️⃣ 물병자리/물고기자리/양자리 별자리 여행 (3시간)\n4️⃣ 바닷가 산책 여행 (3시간)\n5️⃣ 잠재의식 수면유도 (1시간 30분)\n6️⃣ 잔여긴장 해소 수면유도 (1시간 30분)\n7️⃣ 바닷속 여행 (3시간)\n8️⃣ 상처,염증 자연치유 수면유도 (3시간)\n9️⃣ 체온유도 수면유도 (3시간)\n🔟 우울증 무기력증 자연치유 수면유도 (3시간) \n\n번호를 입력해 선택하세요`)
+    .setTimestamp()
+    .setFooter(`${user.username}#${user.discriminator}`, user.displayAvatarURL())
+    return embed
+}
+
+
 module.exports = {
     reg_plz:reg_plz,
     reg_already:reg_already,
     reg_info:reg_info,
     sleep_cycle:sleep_cycle,
     sleep_guide:sleep_guide,
-    nap_guide:nap_guide
+    nap_guide:nap_guide,
+    custom_first:custom_first
 }

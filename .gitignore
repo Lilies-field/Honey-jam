@@ -107,3 +107,4 @@ package-lock.json
 /src/config.js
 src/logger/config.js
 src/db/config.js
+config.json

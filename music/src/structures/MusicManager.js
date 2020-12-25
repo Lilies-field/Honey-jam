@@ -24,13 +24,14 @@ class MusicManager {
 
     async handleVideo(message, voiceChannel, song) {
         const serverQueue = this.queue.get(message.guild.id);
-        song.requestedBy = message.author;
+        // console.log(message.author)
+        // song.requestedBy = message.author
         if (!serverQueue) {
             const queue = new Queue(this.client, {
                 textChannel: message.channel,
                 voiceChannel
             });
-            queue.songs.push(song);
+            queue.songs.push(song)
             this.queue.set(message.guild.id, queue);
 
             try {
